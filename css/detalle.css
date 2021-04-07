@@ -1,0 +1,160 @@
+.detalles {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Detalles producto */
+
+.detalle-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+@media screen and (min-width: 768px) {
+    .detalle-producto {
+        flex-direction: row;
+    }
+}
+
+
+/* Imagen producto */
+
+.detalle-producto .imagen {
+    flex: 0 0 40%;
+    border: 1px solid #d9d9d9;
+    margin: .6rem .4rem;
+}
+
+.detalle-producto .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Datos producto */
+
+.datos-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-producto .nombre-producto {
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .datos-producto .nombre-producto {
+        margin-bottom: 1rem;
+    }
+}
+
+.datos-producto .precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+@media screen and (min-width: 480px) {
+    .datos-producto .precios {
+        flex-direction: row;
+    }
+}
+
+.datos-producto .precios .especial {
+    color: green;
+}
+
+.datos-producto .precios .coutas {
+    font-size: 11px;
+    text-align: center;
+}
+
+.datos-producto .precios .especial-precio {
+    margin-bottom: 1.5rem;
+}
+
+.datos-producto .datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .datos-producto .datos {
+        align-items: flex-start;
+    }
+}
+
+
+/* Datos  */
+
+.datos {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.datos span {
+    color: green;
+}
+
+.datos i {
+    color: green;
+}
+
+.datos i {
+    margin-right: 1rem;
+}
+
+.datos .garantia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.datos .stock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.datos .envios {
+    display: flex;
+}
+
+
+/* Boton */
+
+.boton {
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin: 1rem 1rem;
+    background-color: #0F94D2;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (min-width: 768px) {
+    .boton {
+        width: 50%;
+    }
+}
+
+.boton:hover {
+    transform: scale(.9);
+}

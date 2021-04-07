@@ -5,141 +5,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/detalle.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <header class="header contenedor">
-
-        <div class="logo">
-            <img src="assets/img/icono.jpg" alt="">
-        </div>
-
+    <header class="header">
         <div class="navegador">
-            <nav class="indice">
-                <ul class="menu">
-                    <li>
-                        Nuevos Productos
+            <nav class="menu">
+                <ul>
+                    <li class="logo">
+                        <div>
+                            <i class="fal fa-computer-speaker"></i>
+                            <a href="#">MERNTech</a>
+                        </div>
                     </li>
-                    <li>
-                        Producto
+
+                    <li class="menu-nav">
+                        <div class="opcion">
+                            <a href="#">Novedades</a>
+                        </div>
+                        <div class="opcion">
+                            <a href="#">Productos</a>
+
+                        </div>
+                    </li>
+
+                    <li class="carrito">
+                        <img src="assets/img/cart.png" alt="" class="img-carrito">
                     </li>
                 </ul>
+
+                <div class="contenido oculto">
+                    <table id="lista-carrito" class="">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="assets/img/placaAsus.jpg" alt="" width="150" height="150">
+                                </td>
+                                <td>Placa madre ASUS</td>
+                                <td>$10.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="boton">Vaciar Carrito</a>
+                </div>
+
             </nav>
-        </div>
 
-        <div class="carrito-compras">
-            <img src="assets/img/cart.png" alt="" class="img-carrito">
-        </div>
-
-        <div class="contenido oculto">
-            <table id="lista-carrito" class="">
-                <thead>
-                    <tr>
-                        <th>Imagen</th>
-                        <th>Nombre</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="assets/img/placaAsus.jpg" alt="" width="150" height="150">
-                        </td>
-                        <td>Placa madre ASUS</td>
-                        <td>$10.000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="#" class="boton">Vaciar Carrito</a>
         </div>
     </header>
 
+    <main>
+        <div class="detalles contenedor">
 
-    <div class="contendor detalle-producto">
+            <div class="detalle-producto">
 
-        <div class="imagen">
-            <img src="assets/img/asus_detalle.jpg" alt="" width="300" height="300">
+                <div class="imagen">
+                    <img src="assets/img/asus_detalle.jpg" alt="" width="300" height="300">
+                </div>
+
+                <div class="datos-producto">
+
+                    <div class="nombre-producto">
+                        <p>Mother ASUS PRIME B365M-A 1151 9th Gen HMDI M.2 </p>
+                    </div>
+
+                    <div class="precios">
+                        <p class="regular">$ 10.226 <span>Precio Regular</span></p>
+                        <div class="especial-precio">
+                            <span class="coutas">12 cuotas sin interes a: </span>
+                            <p class="especial">$ 8.590 <span>Precio Especial</span></p>
+                        </div>
+                    </div>
+
+                    <div class="datos">
+
+                        <div class="garantia">
+                            <div class="icono-garantia">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+
+                            <div class="detalle-garantia">
+                                <p><span>Garantía</span> - 36 meses</p>
+                            </div>
+                        </div>
+
+                        <div class="stock">
+                            <i class="fas fa-check"></i>
+                            <p><span>En Stock disponible </span> - Entrega inmediata.</p>
+                        </div>
+
+                        <div class="envios">
+                            <i class="fas fa-bus"></i>
+                            <p><span>Envíos a todo el país.</span></p>
+                        </div>
+
+                    </div>
+
+                    <a href="#" type="button" class="boton">Sumar Carrito</a>
+                </div>
+
+            </div>
+
+            <!--  <div class="especificaciones">
+                <h1 class="centrado">
+                    Especificaciones
+                    <hr>
+                </h1>
+                <nav class="datos-especificaciones">
+                    <p>Plataforma: Intel</p>
+                    <p>Socket: 1151 Coffe Lake</p>
+                    <p>Chipsets Principal: Intel B365</p>
+                </nav>
+            </div> -->
+
         </div>
-
-        <div class="datos-producto">
-
-            <div class="nombre-producto">
-                <p>Mother ASUS PRIME B365M-A 1151 9th Gen HMDI M.2 </p>
-            </div>
-
-            <div class="precios">
-                <p class="regular">$ 10.226</p>
-                <p class="especial">$ 8.590</p>
-            </div>
-
-            <div class="datos">
-
-                <div class="garantia">
-                    <p>Garantía - 36 meses</p>
-                </div>
-
-                <div class="stock">
-                    <p>En Stock - Entrega inmediata.</p>
-                </div>
-
-                <div class="envios">
-                    <p>Envíos a todo el país.</p>
-                </div>
-
-            </div>
-
-            <a href="#" type="button" class="boton">Sumar Carrito</a>
-        </div>
-
-    </div>
-
-    <h1 class="encabezado centrado">
-        Especificaciones
-        <hr>
-    </h1>
-
-    <div class="especificaciones">
-        <nav class="datos-especificaciones">
-            <p>Plataforma: Intel</p>
-            <p>Socket: 1151 Coffe Lake</p>
-            <p>Chipsets Principal: Intel B365</p>
-        </nav>
-    </div>
-
-    <hr>
+    </main>
 
     <footer class="footer" id="footer">
-        <div class="contenedor">
-            <div class="contenedor-footer">
-                <nav class="menu" id="primaria">
-                    <ul>
-                        <li>Contacto</li>
-                        <li>Ayuda</li>
-                    </ul>
-                </nav>
+        <div class="contenido-footer">
+            <div class="detalle">
 
-                <nav class="menu" id="secundario">
+                <div class="dato">
+                    <h2>Datos</h2>
+                    <nav class="menu">
+                        <a class="enlace" href="#">Para tu Negocio</a>
+                        <a class="enlace" href="#">Soporte</a>
+                    </nav>
+                </div>
+
+                <div class="redes">
+                    <h2>Redes</h2>
+                    <nav class="sociales">
+
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://youtube.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com"></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+                <div class="barra">
+                    <h2>Contactos</h2>
+                    <div class="iconos contenedor">
+                        <div class="icono icono1">
+                            <p>B° Bs As Calle Groeber 6783</p>
+                        </div>
+                        <div class="icono icono2">
+                            <p>011-154543 / 0800-6543-323</p>
+                        </div>
+                        <div class="icono icono3">
+                            <p>merncurso2021@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="derechos">
+                <nav>
                     <p>Autor: Jorge Nicolas Martin</p>
-                </nav>
-
-
-                <nav class="menu" id="terciaria">
-                    <ul>
-                        <li>
-                            <a href="http://facebook.com"><span> Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="http://twitter.com"><span> Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="http://youtube.com"><span> YouTube</span></a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com"><span> Instagram</span></a>
-                        </li>
-                    </ul>
                 </nav>
             </div>
 
