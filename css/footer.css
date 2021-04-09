@@ -1,0 +1,185 @@
+/* footer */
+
+.footer {
+    border-top: 1px solid #d9d9d9;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    min-height: 3rem;
+    background-color: rgb(66, 68, 68);
+}
+
+.footer .contenido-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .detalle {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+        align-items: initial;
+    }
+}
+
+.detalle h2 {
+    border-bottom: 1px solid #d9d9d9;
+    color: #f2f2f2;
+    margin-bottom: 1rem;
+}
+
+
+/* Seccion datos */
+
+.detalle .dato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .detalle .dato {
+        margin-right: 1rem;
+    }
+}
+
+.detalle .dato nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalle .dato nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+
+/* Seccion Redes */
+
+.detalle .redes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .detalle .redes {
+        margin-right: 1rem;
+    }
+}
+
+.detalle .redes nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalle .redes nav ul li {
+    flex: 0 0 calc(25%);
+    list-style: none;
+}
+
+.detalle .redes nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.detalle .redes .sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.detalle .redes .sociales ul li a[href*='http://facebook.com']::before {
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='http://twitter.com']::before {
+    content: "\f099";
+}
+
+.sociales ul li a[href*='http://youtube.com']::before {
+    content: "\f167";
+}
+
+.sociales ul li a[href*='http://instagram.com']::before {
+    content: "\f16d";
+}
+
+.sociales ul li a[href*='http://pinterest.com']::before {
+    content: "\f0d2";
+}
+
+
+/*Datos contactos*/
+
+.barra .iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra .iconos .icono {
+    background-position: 1% center !important;
+    background-size: 2.5rem;
+    text-align: right;
+    color: white;
+    padding: .5rem 4rem;
+}
+
+.barra .iconos .icono p {
+    font-size: 15px;
+    text-align: right;
+}
+
+@media screen and (min-width: 768px) {
+    .barra .iconos .icono p {
+        text-align: justify !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .barra .iconos .icono {
+        padding: 0 4rem;
+    }
+}
+
+.barra .iconos .icono.icono1 {
+    background-image: url("../assets/img/address.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.barra .iconos .icono.icono2 {
+    background-image: url("../assets/img/smartphones.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.barra .iconos .icono.icono3 {
+    background-image: url("../assets/img/gmail.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.derechos {
+    border-top: 1px solid #f2f2f2;
+    width: 100%;
+    color: #f2f2f2;
+}
+
+.derechos nav p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}

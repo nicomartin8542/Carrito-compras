@@ -41,6 +41,7 @@
 .datos-producto {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .datos-producto .nombre-producto {
@@ -50,10 +51,8 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .datos-producto .nombre-producto {
-        margin-bottom: 1rem;
-    }
+.datos-producto .nombre-producto p {
+    margin: 0;
 }
 
 .datos-producto .precios {
@@ -71,17 +70,23 @@
     }
 }
 
+.datos-producto .precios .regular p {
+    margin: 0;
+    padding: 0;
+}
+
+.datos-producto .precios .especial-precio {
+    margin-bottom: .5rem;
+}
+
 .datos-producto .precios .especial {
     color: green;
+    margin: 0;
 }
 
 .datos-producto .precios .coutas {
     font-size: 11px;
     text-align: center;
-}
-
-.datos-producto .precios .especial-precio {
-    margin-bottom: 1.5rem;
 }
 
 .datos-producto .datos {
@@ -113,26 +118,27 @@
 
 .datos i {
     color: green;
+    margin-right: .5rem;
 }
 
-.datos i {
-    margin-right: 1rem;
+.datos p {
+    margin: auto;
 }
 
 .datos .garantia {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    padding: 0;
 }
 
 .datos .stock {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 .datos .envios {
     display: flex;
+    align-items: center;
 }
 
 
