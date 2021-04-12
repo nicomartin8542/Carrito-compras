@@ -164,3 +164,7 @@
 .boton:hover {
     transform: scale(.9);
 }
+
+.especificaciones {
+    margin: 1rem 0;
+}

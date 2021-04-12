@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/detalle.css">
-
+    <link rel="stylesheet" href="css/footer.css">
     <title>Document</title>
 </head>
 
@@ -40,6 +40,9 @@
                     <li class="carrito">
                         <div class="carrito-compras">
                             <img src="assets/img/cart.png" alt="" class="img-carrito">
+                            <div class="contador">
+                                <span>0</span>
+                            </div>
                             <div class="contenido oculto">
                                 <table id="lista-carrito" class="lista-carrito">
                                     <thead>
@@ -65,85 +68,73 @@
 
         </div>
     </header>
-
-
     <main>
         <div class="detalles contenedor">
 
             <div class="detalle-producto">
+            </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="contenido-footer">
+            <div class="detalle">
 
-                <div class="imagen">
-                    <img src="assets/img/asus_detalle.jpg" alt="" width="300" height="300">
+                <div class="dato">
+                    <h2>Datos</h2>
+                    <nav class="menu">
+                        <a class="enlace" href="#">Para tu Negocio</a>
+                        <a class="enlace" href="#">Soporte</a>
+                    </nav>
                 </div>
 
-                <div class="datos-producto">
+                <div class="redes">
+                    <h2>Redes</h2>
+                    <nav class="sociales">
 
-                    <div class="nombre-producto">
-                        <p>Mother ASUS PRIME B365M-A 1151 9th Gen HMDI M.2 </p>
-                    </div>
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://youtube.com"></a>
+                            </li>
+                            <li>
+                                <a href="http://instagram.com"></a>
+                            </li>
+                        </ul>
+                    </nav>
 
-                    <div class="precios">
-                        <div class="regular">
-                            <p>$ 10.226 <span>Precio Regular</span></p>
-                        </div>
-                        <div class="especial-precio">
-                            <span class="coutas">12 cuotas sin interes a: </span>
-                            <p class="especial">$ 8.590 <span>Precio Especial</span></p>
-                        </div>
-                    </div>
-
-                    <div class="datos">
-
-                        <div class="garantia">
-                            <div class="icono-garantia">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-
-                            <div class="detalle-garantia">
-                                <p><span>Garantía</span> - 36 meses</p>
-                            </div>
-                        </div>
-
-                        <div class="stock">
-                            <i class="fas fa-check"></i>
-                            <p><span>En Stock disponible </span> - Entrega inmediata.</p>
-                        </div>
-
-                        <div class="envios">
-                            <i class="fas fa-bus"></i>
-                            <p><span>Envíos a todo el país.</span></p>
-                        </div>
-
-                    </div>
-
-                    <a href="#" type="button" class="boton agregar-carrito">Sumar Carrito</a>
                 </div>
+
+
+                <div class="barra">
+                    <h2>Contactos</h2>
+                    <div class="iconos contenedor">
+                        <div class="icono icono1">
+                            <p>B° Bs As Calle Groeber 6783</p>
+                        </div>
+                        <div class="icono icono2">
+                            <p>011-154543 / 0800-6543-323</p>
+                        </div>
+                        <div class="icono icono3">
+                            <p>merncurso2021@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
 
-            <div class="especificaciones">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Caracteristicas Generales</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde asperiores nihil cumque possimus voluptates minima sapiente deserunt modi optio cum, magnam enim ipsa consectetur veniam quaerat eveniet vel culpa molestiae.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="derechos">
+                <nav>
+                    <p>Autor: Jorge Nicolas Martin</p>
+                </nav>
             </div>
 
         </div>
-    </main>
-
-    <!-- Agrego Footer -->
-    <div id="footerInclude"></div>
-    <!-- Footer -->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 
