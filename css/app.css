@@ -105,3 +105,22 @@
        display: block;
        text-transform: uppercase;
    }
+   
+   .map {
+       margin: 0 auto;
+       margin-bottom: 10rem;
+       width: 90%;
+       min-width: 220px;
+       height: 250px;
+   }
+   
+   #map {
+       width: 100%;
+       height: 100%;
+       box-shadow: 5px 5px 5px #888;
+       z-index: 1;
+   }
+   
+   .map h2::before {
+       top: 4rem;
+   }

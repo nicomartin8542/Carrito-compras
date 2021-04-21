@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/footer.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
     <title>Document</title>
 </head>
 
@@ -118,13 +120,25 @@
 
         <h1 class="encabezado centrado">
             Productos
-            <hr>
-        </h1>
 
+        </h1>
+        <hr>
         <div class="productos contenedor">
 
         </div>
+
+        <section class="map">
+            <h2 class="encabezado centrado">Nuestra Ubicacion
+                <hr>
+            </h2>
+
+            <div id="map"></div>
+        </section>
+
     </main>
+
+
+
     <footer class="footer" id="footer">
         <div class="contenido-footer">
             <div class="detalle">
@@ -188,6 +202,21 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="js/app.js" defer></script>
+    <script>
+        var map = L.map('map').
+        setView([21.48948, -87.53250], 14);
+
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+            maxZoom: 18
+        }).addTo(map);
+
+        L.control.scale().addTo(map);
+        var marker = L.marker([-29.41105, -66.85067], {
+            draggable: true
+        }).addTo(map);
+        marker.bindPopup("<p>MERNTech</p>").openPopup();
+    </script>
 </body>
 
 </html>
